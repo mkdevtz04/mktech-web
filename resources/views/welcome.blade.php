@@ -69,4 +69,79 @@
             </div>
         </div>
     </section>
+
+    <!-- Our Team Section -->
+    <section id="team" class="team-section">
+        <div class="container">
+            <h2 class="section-title">Meet Our Experts</h2>
+            <div class="team-grid">
+                
+                <!-- Developer -->
+                <div class="team-card">
+                    <div class="team-img-placeholder">
+                        [ Image 500x500 px ]
+                    </div>
+                    <h3>John Doe</h3>
+                    <p class="role">Lead Developer</p>
+                    <p class="bio">Expert in modern web and mobile application architectures, ensuring highly scalable software implementations.</p>
+                </div>
+
+                <!-- Graphics Designer -->
+                <div class="team-card">
+                    <div class="team-img-placeholder">
+                        [ Image 500x500 px ]
+                    </div>
+                    <h3>Jane Smith</h3>
+                    <p class="role">Graphics Designer</p>
+                    <p class="bio">Specialized in creating striking visual identities, responsive UI/UX designs, and engaging marketing materials.</p>
+                </div>
+
+                <!-- Sales Head -->
+                <div class="team-card">
+                    <div class="team-img-placeholder">
+                        [ Image 500x500 px ]
+                    </div>
+                    <h3>Michael Johnson</h3>
+                    <p class="role">Sales Head</p>
+                    <p class="bio">Dedicated to understanding client requirements and ensuring our tech solutions align perfectly with your business goals.</p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="testimonials-section">
+        <div class="container">
+            <h2 class="section-title">What Our Clients Say</h2>
+            <div class="testimonial-grid">
+                
+                <!-- Testimonial 1 -->
+                <div class="testimonial-card">
+                    <div class="testimonial-quote-icon">"</div>
+                    <p class="quote">"Mktech completely transformed our corporate IT infrastructure. Their dedicated developer team delivered a seamless web application that doubled our daily transaction capabilities safely."</p>
+                    <div class="testimonial-author">Sarah Jenkins</div>
+                    <div class="testimonial-company">CEO, FinTech Solutions</div>
+                </div>
+
+                <!-- Testimonial 2 -->
+                <div class="testimonial-card">
+                    <div class="testimonial-quote-icon">"</div>
+                    <p class="quote">"The graphics design team at Mktech redefined our brand identity from scratch. Their creativity combined with their technical expertise in mobile app development is unmatched."</p>
+                    <div class="testimonial-author">David R.</div>
+                    <div class="testimonial-company">Marketing Director, RetailBrand</div>
+                </div>
+
+                <!-- Testimonial 3 -->
+                <div class="testimonial-card">
+                    <div class="testimonial-quote-icon">"</div>
+                    <p class="quote">"We hired Mktech for a massive CCTV and security installation across our 4 branch offices. Their team was extremely professional, and the camera network is incredibly reliable."</p>
+                    <div class="testimonial-author">Omar K.</div>
+                    <div class="testimonial-company">Operations Manager, LogisticsPro</div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
 @endsection
