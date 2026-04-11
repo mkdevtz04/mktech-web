@@ -42,7 +42,7 @@
                 <p>Your dedicated partner in robust IT infrastructure, cutting-edge software development, and uncompromising security. We engineer solutions that empower your business.</p>
                 <div class="contact-info mt-top">
                     <p style="margin-bottom: 8px;"><strong>Email:</strong> info@mktech.com</p>
-                    <p><strong>Phone:</strong> +123 456 7890</p>
+                    <p><strong>Phone:</strong> +255 626 267 7471</p>
                 </div>
             </div>
 
@@ -76,19 +76,19 @@
                 <p style="margin-bottom: 20px;">Follow us across social media for updates, tips, and technical insights.</p>
                 <div class="social-links">
                     <a href="#" class="social-icon" title="Instagram">
-                        <div class="icon-placeholder">IG</div> <!-- Replace this div with exactly: <img src="images/instagram.png" alt="Instagram" style="width: 20px;"> -->
+                        <div class="icon-placeholder"><img src="{{ asset('images/in.png') }} " alt="Instagram" style="width: 70px;"></div> <!-- Replace this div with exactly:  -->
                     </a>
                     <a href="#" class="social-icon" title="TikTok">
-                        <div class="icon-placeholder">TK</div> <!-- Replace this div with TK png -->
+                        <div class="icon-placeholder"><img src="{{ asset('images/tk.png') }}" alt="TikTok" style="width: 50px;"></div> <!-- Replace this div with TK png -->
                     </a>
                     <a href="#" class="social-icon" title="LinkedIn">
-                        <div class="icon-placeholder">IN</div> <!-- Replace this div with IN png -->
+                        <div class="icon-placeholder"><img src="{{ asset('images/in.png') }}" alt="LinkedIn" style="width: 70px;"></div> <!-- Replace this div with IN png -->
                     </a>
                     <a href="#" class="social-icon" title="Facebook">
-                        <div class="icon-placeholder">FB</div> <!-- Replace this div with FB png -->
+                        <div class="icon-placeholder"><img src="{{ asset('images/fb.png') }}" alt="Facebook" style="width: 70px;"></div> <!-- Replace this div with FB png -->
                     </a>
                     <a href="#" class="social-icon" title="WhatsApp">
-                        <div class="icon-placeholder">WA</div> <!-- Replace this div with WA png -->
+                        <div class="icon-placeholder"><img src="{{ asset('images/whatsup.png') }}" alt="WhatsApp" style="width: 45px;"></div> <!-- Replace this div with WA png -->
                     </a>
                 </div>
             </div>
