@@ -13,7 +13,7 @@
 <div class="container" style="padding: 60px 0; display: flex; gap: 40px; flex-wrap: wrap;">
     <div style="flex: 2; min-width: 300px;">
         <div style="width: 100%; height: 400px; background-color: #e2e8f0; border: 1px solid #cbd5e1; border-radius: 4px; display: flex; justify-content: center; align-items: center; color: #64748b; font-weight: bold; margin-bottom: 30px; font-size: 20px;">
-            [ Website Development Image Container ]
+        <img src="{{ asset('images/web.png') }}" style="width: 100%; height: 100%;" alt="Hero Image">
         </div>
         
         <h2>Standard & Custom Web Solutions</h2>

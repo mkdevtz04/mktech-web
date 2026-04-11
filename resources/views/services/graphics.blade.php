@@ -13,8 +13,8 @@
 <div class="container" style="padding: 60px 0; display: flex; gap: 40px; flex-wrap: wrap;">
     <div style="flex: 2; min-width: 300px;">
         <div style="width: 100%; height: 400px; background-color: #e2e8f0; border: 1px solid #cbd5e1; border-radius: 4px; display: flex; justify-content: center; align-items: center; color: #64748b; font-weight: bold; margin-bottom: 30px; font-size: 20px;">
-            [ Graphics Design Image Container ]
-        </div>
+        <img src="{{ asset('images/design.png') }}" style="width: 70%; height: 90%;" alt="Hero Image">
+    </div>
         
         <h2>Visual Identities Built to Last</h2>
         <p style="margin-bottom: 20px; font-size: 18px; line-height: 1.7;">Good design isn’t just about making things look pretty—it’s about communicating your brand's unique value clearly. We handle everything from logo creation and corporate branding to promotional materials that give your business a polished and professional look.</p>

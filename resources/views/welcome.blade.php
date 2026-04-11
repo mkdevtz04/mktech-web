@@ -14,7 +14,7 @@
             </div>
             <!-- Simple placeholder representing an image on the right -->
             <div class="hero-image-box">
-                [ Professional Technology Image ]
+                <img src="{{ asset('images/main.png') }}" style="width: 100%; height: 100%;" alt="Hero Image">
             </div>
         </div>
     </section>
@@ -26,35 +26,45 @@
             <div class="services-grid">
                 
                 <div class="service-card" onclick="window.location='{{ route('services.it') }}'" style="cursor: pointer;">
-                    <div class="service-icon">💻</div>
+                    <div class="service-icon">
+                        <img src="{{ asset('images/mis.png') }}" style="width: 80%; height: 80%;" alt="Hero Image">
+                    </div>
                     <h3>IT Services</h3>
                     <p>Complete IT infrastructure setup and maintenance. We manage networks, hardware, and provide dedicated technical support for your office.</p>
                     <a href="{{ route('services.it') }}" style="color: #1e3a8a; font-weight: bold; display: inline-block; margin-top: 10px;">Learn more &rarr;</a>
                 </div>
 
                 <div class="service-card" onclick="window.location='{{ route('services.graphics') }}'" style="cursor: pointer;">
-                    <div class="service-icon">🎨</div>
+                    <div class="service-icon">
+                        <img src="{{ asset('images/design.png') }}" style="width: 80%; height: 80%;" alt="Hero Image">
+                    </div>
                     <h3>Graphics Design</h3>
                     <p>Corporate branding, logo creation, and promotional materials designed to give your business a polished and professional look.</p>
                     <a href="{{ route('services.graphics') }}" style="color: #1e3a8a; font-weight: bold; display: inline-block; margin-top: 10px;">Learn more &rarr;</a>
                 </div>
 
                 <div class="service-card" onclick="window.location='{{ route('services.web') }}'" style="cursor: pointer;">
-                    <div class="service-icon">🌐</div>
+                    <div class="service-icon">
+                        <img src="{{ asset('images/web.png') }}" style="width: 80%; height: 80%;" alt="Hero Image">
+                    </div>
                     <h3>Website Development</h3>
                     <p>Standard, responsive web applications built with reliability in mind to serve your clients and manage your operations smoothly.</p>
                     <a href="{{ route('services.web') }}" style="color: #1e3a8a; font-weight: bold; display: inline-block; margin-top: 10px;">Learn more &rarr;</a>
                 </div>
 
                 <div class="service-card" onclick="window.location='{{ route('services.mobile') }}'" style="cursor: pointer;">
-                    <div class="service-icon">📱</div>
+                    <div class="service-icon">
+                        <img src="{{ asset('images/mob.png') }}" style="width: 90%; height: 90%;" alt="Hero Image">
+                    </div>
                     <h3>Mobile App Development</h3>
                     <p>Secure and user-friendly mobile applications for Android and iOS devices, streamlining accessibility for your customers.</p>
                     <a href="{{ route('services.mobile') }}" style="color: #1e3a8a; font-weight: bold; display: inline-block; margin-top: 10px;">Learn more &rarr;</a>
                 </div>
 
                 <div class="service-card" onclick="window.location='{{ route('services.cctv') }}'" style="cursor: pointer;">
-                    <div class="service-icon">📷</div>
+                    <div class="service-icon">
+                        <img src="{{ asset('images/cctv.png') }}" style="width: 90%; height: 90%;" alt="Hero Image">
+                    </div>
                     <h3>CCTV Camera & Security</h3>
                     <p>Professional installation of CCTV systems, access controls, and modern security gadgets to protect your physical premises.</p>
                     <a href="{{ route('services.cctv') }}" style="color: #1e3a8a; font-weight: bold; display: inline-block; margin-top: 10px;">Learn more &rarr;</a>
@@ -79,9 +89,9 @@
                 <!-- Developer -->
                 <div class="team-card">
                     <div class="team-img-placeholder">
-                        [ Image 500x500 px ]
+                     <img src="{{ asset('images/ps.png') }}" style="width: 100%; height: 100%;" alt="Hero Image">
                     </div>
-                    <h3>John Doe</h3>
+                    <h3>Costantine Clement</h3>
                     <p class="role">Lead Developer</p>
                     <p class="bio">Expert in modern web and mobile application architectures, ensuring highly scalable software implementations.</p>
                 </div>
@@ -89,9 +99,9 @@
                 <!-- Graphics Designer -->
                 <div class="team-card">
                     <div class="team-img-placeholder">
-                        [ Image 500x500 px ]
+                        <img src="{{ asset('images/cj.png') }}" style="width: 100%; height: 100%;" alt="Hero Image">
                     </div>
-                    <h3>Jane Smith</h3>
+                    <h3>Erasto Kamuli</h3>
                     <p class="role">Graphics Designer</p>
                     <p class="bio">Specialized in creating striking visual identities, responsive UI/UX designs, and engaging marketing materials.</p>
                 </div>
@@ -99,9 +109,9 @@
                 <!-- Sales Head -->
                 <div class="team-card">
                     <div class="team-img-placeholder">
-                        [ Image 500x500 px ]
+                     <img src="{{ asset('images/kido.png') }}" style="width: 90%; height: 100%;" alt="Hero Image">
                     </div>
-                    <h3>Michael Johnson</h3>
+                    <h3>Kido</h3>
                     <p class="role">Sales Head</p>
                     <p class="bio">Dedicated to understanding client requirements and ensuring our tech solutions align perfectly with your business goals.</p>
                 </div>
@@ -120,15 +130,15 @@
                 <div class="testimonial-card">
                     <div class="testimonial-quote-icon">"</div>
                     <p class="quote">"Mktech completely transformed our corporate IT infrastructure. Their dedicated developer team delivered a seamless web application that doubled our daily transaction capabilities safely."</p>
-                    <div class="testimonial-author">Sarah Jenkins</div>
-                    <div class="testimonial-company">CEO, FinTech Solutions</div>
+                    <div class="testimonial-author">Adam Lwena</div>
+                    <div class="testimonial-company">CEO, lwenahub Solutions</div>
                 </div>
 
                 <!-- Testimonial 2 -->
                 <div class="testimonial-card">
                     <div class="testimonial-quote-icon">"</div>
                     <p class="quote">"The graphics design team at Mktech redefined our brand identity from scratch. Their creativity combined with their technical expertise in mobile app development is unmatched."</p>
-                    <div class="testimonial-author">David R.</div>
+                    <div class="testimonial-author">Timoth H.</div>
                     <div class="testimonial-company">Marketing Director, RetailBrand</div>
                 </div>
 
