@@ -1,4 +1,6 @@
 /* Mktech Custom CSS - Clean Corporate Look */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+
 * {
     margin: 0;
     padding: 0;
@@ -6,9 +8,9 @@
 }
 
 body {
-    font-family: Arial, Helvetica, sans-serif;
-    background-color: #ffffff; /* Base color white */
-    color: #000000; /* Text color black */
+    font-family: 'Inter', Arial, Helvetica, sans-serif;
+    background-color: #ffffff;
+    color: #000000;
     line-height: 1.6;
 }
 
@@ -71,19 +73,23 @@ a {
 .navbar {
     background-color: #1e3a8a;
     color: #ffffff;
-    padding: 20px 0;
+    padding: 18px 0;
     border-bottom: 3px solid #0f172a;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
 }
 
 .navbar .container {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    position: relative;
 }
 
 .navbar .brand {
     font-size: 26px;
-    font-weight: bold;
+    font-weight: 700;
     letter-spacing: 1px;
 }
 
@@ -97,10 +103,44 @@ a {
     color: #ffffff;
     font-size: 16px;
     font-weight: 500;
+    transition: opacity 0.2s;
 }
 
 .navbar .nav-links a:hover {
-    text-decoration: underline;
+    opacity: 0.8;
+    text-decoration: none;
+}
+
+/* Hamburger Toggle */
+.nav-toggle {
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    gap: 5px;
+    cursor: pointer;
+    background: none;
+    border: none;
+    padding: 4px;
+    z-index: 1100;
+}
+
+.nav-toggle span {
+    display: block;
+    width: 26px;
+    height: 2px;
+    background-color: #ffffff;
+    border-radius: 2px;
+    transition: all 0.3s ease;
+}
+
+.nav-toggle.open span:nth-child(1) {
+    transform: translateY(7px) rotate(45deg);
+}
+.nav-toggle.open span:nth-child(2) {
+    opacity: 0;
+}
+.nav-toggle.open span:nth-child(3) {
+    transform: translateY(-7px) rotate(-45deg);
 }
 
 /* Hero Section */
@@ -401,11 +441,13 @@ a {
     text-decoration: underline;
 }
 
-/* Comprehensive Corporate Footer */
+/* ============================================
+   COMPREHENSIVE CORPORATE FOOTER
+   ============================================ */
 .footer {
     background-color: #1e3a8a;
     color: #ffffff;
-    padding-top: 80px;
+    padding-top: 70px;
     font-size: 15px;
 }
 
@@ -414,21 +456,28 @@ a {
     grid-template-columns: 2.5fr 1.5fr 1.5fr 2fr;
     gap: 40px;
     margin-bottom: 60px;
+    align-items: start;
 }
 
+/* Footer brand */
 .footer-col .brand {
-    font-size: 32px;
-    font-weight: bold;
-    margin-bottom: 20px;
-    letter-spacing: 1px;
+    font-size: 30px;
+    font-weight: 700;
+    margin-bottom: 15px;
+    letter-spacing: 1.5px;
+    display: inline-block;
 }
 
+/* Column heading with accent underline */
 .footer-col h4 {
-    font-size: 20px;
+    font-size: 16px;
+    font-weight: 600;
     color: #ffffff;
     margin-bottom: 20px;
     position: relative;
     padding-bottom: 12px;
+    text-transform: uppercase;
+    letter-spacing: 0.8px;
 }
 
 .footer-col h4::after {
@@ -436,99 +485,330 @@ a {
     position: absolute;
     left: 0;
     bottom: 0;
-    width: 45px;
-    height: 3px;
-    background-color: #60a5fa; /* light blue accent for contrast */
+    width: 40px;
+    height: 2px;
+    background: linear-gradient(90deg, #60a5fa, #3b82f6);
+    border-radius: 2px;
 }
 
 .footer-col p {
-    color: #dbeafe;
-    line-height: 1.8;
+    color: #c7d9f5;
+    line-height: 1.85;
+    font-size: 14.5px;
 }
 
+/* Footer contact detail rows */
+.footer-contact-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+    margin-bottom: 10px;
+    color: #c7d9f5;
+    font-size: 14.5px;
+}
+
+.footer-contact-item strong {
+    color: #ffffff;
+    white-space: nowrap;
+}
+
+/* Footer links list */
 .footer-col ul {
     list-style: none;
+    padding: 0;
+    margin: 0;
 }
 
 .footer-col ul li {
-    margin-bottom: 12px;
+    margin-bottom: 13px;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+
+.footer-col ul li::before {
+    content: '›';
+    color: #60a5fa;
+    font-size: 18px;
+    line-height: 1;
+    flex-shrink: 0;
 }
 
 .footer-col ul a {
-    color: #dbeafe;
-    transition: color 0.2s ease, padding-left 0.2s ease;
+    color: #c7d9f5;
+    font-size: 14.5px;
+    transition: color 0.2s ease, padding-left 0.15s ease;
     display: inline-block;
 }
 
 .footer-col ul a:hover {
     color: #ffffff;
     text-decoration: none;
-    padding-left: 6px; /* Smooth professional hover effect */
+    padding-left: 4px;
 }
 
 .mt-top {
     margin-top: 25px;
 }
 
-/* Social Media Icons Box */
+/* ---- Social Media Row ---- */
 .social-links {
     display: flex;
     flex-wrap: wrap;
-    gap: 12px;
+    gap: 10px;
+    margin-top: 4px;
 }
 
 .social-icon {
-    display: block;
-    width: 44px;
-    height: 44px;
-    /* background-color: rgba(255, 255, 255, 0.08);  */
-    border-radius: 4px;
-    /* border: 1px solid rgba(255, 255, 255, 0.15); */
     display: flex;
+    width: 48px;
+    height: 48px;
+    background-color: rgba(255, 255, 255, 0.08);
+    border: 1px solid rgba(255, 255, 255, 0.12);
+    border-radius: 8px;
     justify-content: center;
     align-items: center;
-    transition: background-color 0.3s, transform 0.2s, border-color 0.3s;
+    transition: background-color 0.25s ease, transform 0.2s ease, border-color 0.25s ease;
     text-decoration: none;
+    overflow: hidden;
 }
 
 .social-icon:hover {
-    background-color: rgba(255, 255, 255, 0.15);
+    background-color: rgba(255, 255, 255, 0.2);
     transform: translateY(-4px);
     border-color: #60a5fa;
+}
+
+.social-icon img {
+    width: 28px;
+    height: 28px;
+    object-fit: contain;
+    display: block;
 }
 
 .icon-placeholder {
     color: #ffffff;
     font-weight: bold;
-    font-size: 13px;
+    font-size: 12px;
     text-transform: uppercase;
-    /* This text is purely placeholder until the user drops an img tag here */
 }
 
+/* ---- Footer Divider ---- */
+.footer-divider {
+    border: none;
+    border-top: 1px solid rgba(255, 255, 255, 0.08);
+    margin: 0;
+}
+
+/* ---- Footer Bottom Bar ---- */
 .footer-bottom {
-    background-color: #172a6b; /* deeper blue for bottom bar */
-    padding: 25px 0;
-    text-align: center;
-    border-top: 1px solid rgba(255,255,255,0.05);
+    background-color: #172a6b;
+    padding: 22px 0;
+    border-top: 1px solid rgba(255, 255, 255, 0.06);
+}
+
+.footer-bottom .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
 }
 
 .footer-bottom p {
-    color: #94a3b8;
+    color: #8fa8cc;
     margin: 0;
-    font-size: 14px;
+    font-size: 13.5px;
 }
 
-/* Responsive */
+.footer-bottom-links {
+    display: flex;
+    gap: 20px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-bottom-links a {
+    color: #8fa8cc;
+    font-size: 13px;
+    transition: color 0.2s;
+}
+
+.footer-bottom-links a:hover {
+    color: #ffffff;
+}
+
+/* ============================================
+   RESPONSIVE BREAKPOINTS
+   ============================================ */
+
+/* --- Large Tablet (≤ 1024px): 2-column footer grid --- */
+@media (max-width: 1024px) {
+    .footer-grid {
+        grid-template-columns: 1fr 1fr;
+        gap: 40px 50px;
+        margin-bottom: 50px;
+    }
+
+    .footer-col.about-col {
+        grid-column: 1 / -1; /* span full width on first row */
+    }
+
+    .section-title {
+        font-size: 32px;
+    }
+
+    .hero h1 {
+        font-size: 44px;
+    }
+}
+
+/* --- Tablet / Mobile (≤ 768px): single-column footer, mobile nav --- */
 @media (max-width: 768px) {
+    /* Navbar */
+    .nav-toggle {
+        display: flex;
+    }
+
+    .navbar .nav-links {
+        position: absolute;
+        top: calc(100% + 3px);
+        left: 0;
+        right: 0;
+        background-color: #1e3a8a;
+        flex-direction: column;
+        gap: 0;
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.35s ease, padding 0.35s ease;
+        border-top: 1px solid rgba(255,255,255,0.1);
+        z-index: 999;
+    }
+
+    .navbar .nav-links.open {
+        max-height: 400px;
+        padding: 12px 0;
+    }
+
+    .navbar .nav-links li {
+        padding: 12px 24px;
+        border-bottom: 1px solid rgba(255,255,255,0.06);
+    }
+
+    .navbar .nav-links li:last-child {
+        border-bottom: none;
+    }
+
+    /* Hero */
     .hero .container {
         flex-direction: column;
     }
-    
+
     .hero h1 {
-        font-size: 36px;
+        font-size: 34px;
     }
-    
-    .navbar .nav-links {
-        display: none;
+
+    .hero p {
+        font-size: 17px;
+    }
+
+    .hero-actions {
+        flex-direction: column;
+        gap: 12px;
+    }
+
+    /* Footer Grid: single column */
+    .footer {
+        padding-top: 50px;
+    }
+
+    .footer-grid {
+        grid-template-columns: 1fr;
+        gap: 36px;
+        margin-bottom: 40px;
+    }
+
+    .footer-col.about-col {
+        grid-column: unset;
+    }
+
+    /* Footer bottom: stack vertically */
+    .footer-bottom .container {
+        flex-direction: column;
+        text-align: center;
+        gap: 12px;
+    }
+
+    .footer-bottom-links {
+        justify-content: center;
+    }
+
+    /* Social icons: expand nicely */
+    .social-links {
+        gap: 12px;
+    }
+
+    .social-icon {
+        width: 46px;
+        height: 46px;
+    }
+
+    /* Section */
+    .section-title {
+        font-size: 28px;
+        margin-bottom: 40px;
+    }
+
+    .services-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .testimonial-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* --- Small Mobile (≤ 480px) --- */
+@media (max-width: 480px) {
+    .container {
+        padding: 0 16px;
+    }
+
+    .hero h1 {
+        font-size: 28px;
+    }
+
+    .navbar .brand {
+        font-size: 22px;
+    }
+
+    .footer-col .brand {
+        font-size: 26px;
+    }
+
+    .footer-col h4 {
+        font-size: 15px;
+    }
+
+    .footer-col p,
+    .footer-col ul a,
+    .footer-contact-item {
+        font-size: 14px;
+    }
+
+    .footer-bottom p,
+    .footer-bottom-links a {
+        font-size: 12px;
+    }
+
+    .social-icon {
+        width: 44px;
+        height: 44px;
+    }
+
+    .btn {
+        padding: 10px 20px;
+        font-size: 15px;
     }
 }

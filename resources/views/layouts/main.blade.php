@@ -13,7 +13,13 @@
     <header class="navbar">
         <div class="container">
             <div class="brand"><a href="{{ url('/') }}" style="color: white;">Mktech</a></div>
-            <ul class="nav-links">
+            <!-- Hamburger button (mobile) -->
+            <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation" aria-expanded="false">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul class="nav-links" id="navLinks">
                 <li><a href="{{ url('/#services') }}">Services</a></li>
                 <li><a href="{{ url('/#about') }}">About</a></li>
                 <li><a href="{{ url('/#contact') }}">Contact</a></li>
@@ -40,9 +46,15 @@
             <div class="footer-col about-col">
                 <div class="brand">Mktech</div>
                 <p>Your dedicated partner in robust IT infrastructure, cutting-edge software development, and uncompromising security. We engineer solutions that empower your business.</p>
-                <div class="contact-info mt-top">
-                    <p style="margin-bottom: 8px;"><strong>Email:</strong> info@mktech.com</p>
-                    <p><strong>Phone:</strong> +255 626 267 7471</p>
+                <div class="mt-top">
+                    <div class="footer-contact-item">
+                        <strong>Email:</strong>
+                        <span>info@mktech.com</span>
+                    </div>
+                    <div class="footer-contact-item">
+                        <strong>Phone:</strong>
+                        <span>+255 626 267 7471</span>
+                    </div>
                 </div>
             </div>
 
@@ -54,7 +66,7 @@
                     <li><a href="{{ route('services.graphics') }}">Graphics Design</a></li>
                     <li><a href="{{ route('services.web') }}">Website Development</a></li>
                     <li><a href="{{ route('services.mobile') }}">Mobile Applications</a></li>
-                    <li><a href="{{ route('services.cctv') }}">CCTV & Security</a></li>
+                    <li><a href="{{ route('services.cctv') }}">CCTV &amp; Security</a></li>
                 </ul>
             </div>
 
@@ -73,34 +85,59 @@
             <!-- Column 4: Social Media -->
             <div class="footer-col">
                 <h4>Connect With Us</h4>
-                <p style="margin-bottom: 20px;">Follow us across social media for updates, tips, and technical insights.</p>
+                <p style="margin-bottom: 18px;">Follow us across social media for updates, tips, and technical insights.</p>
                 <div class="social-links">
                     <a href="#" class="social-icon" title="Instagram">
-                        <div class="icon-placeholder"><img src="{{ asset('images/in.png') }} " alt="Instagram" style="width: 70px;"></div> <!-- Replace this div with exactly:  -->
+                        <img src="{{ asset('images/in.png') }}" alt="Instagram">
                     </a>
                     <a href="#" class="social-icon" title="TikTok">
-                        <div class="icon-placeholder"><img src="{{ asset('images/tk.png') }}" alt="TikTok" style="width: 50px;"></div> <!-- Replace this div with TK png -->
+                        <img src="{{ asset('images/tk.png') }}" alt="TikTok">
                     </a>
                     <a href="#" class="social-icon" title="LinkedIn">
-                        <div class="icon-placeholder"><img src="{{ asset('images/in.png') }}" alt="LinkedIn" style="width: 70px;"></div> <!-- Replace this div with IN png -->
+                        <img src="{{ asset('images/in.png') }}" alt="LinkedIn">
                     </a>
                     <a href="#" class="social-icon" title="Facebook">
-                        <div class="icon-placeholder"><img src="{{ asset('images/fb.png') }}" alt="Facebook" style="width: 70px;"></div> <!-- Replace this div with FB png -->
+                        <img src="{{ asset('images/fb.png') }}" alt="Facebook">
                     </a>
                     <a href="#" class="social-icon" title="WhatsApp">
-                        <div class="icon-placeholder"><img src="{{ asset('images/whatsup.png') }}" alt="WhatsApp" style="width: 45px;"></div> <!-- Replace this div with WA png -->
+                        <img src="{{ asset('images/whatsup.png') }}" alt="WhatsApp">
                     </a>
                 </div>
             </div>
         </div>
 
         <!-- Copyright Bottom Bar -->
+        <hr class="footer-divider">
         <div class="footer-bottom">
             <div class="container">
-                <p>&copy; {{ date('Y') }} Mktech. All rights reserved. Professional Technology & Security Solutions.</p>
+                <p>&copy; {{ date('Y') }} Mktech. All rights reserved.</p>
+                <ul class="footer-bottom-links">
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Terms of Service</a></li>
+                    <li><a href="{{ url('/#contact') }}">Contact Us</a></li>
+                </ul>
             </div>
         </div>
     </footer>
+
+    <script>
+        // Hamburger menu toggle
+        const navToggle = document.getElementById('navToggle');
+        const navLinks  = document.getElementById('navLinks');
+        navToggle.addEventListener('click', function () {
+            const isOpen = navLinks.classList.toggle('open');
+            navToggle.classList.toggle('open', isOpen);
+            navToggle.setAttribute('aria-expanded', isOpen);
+        });
+        // Close menu when a link is clicked
+        navLinks.querySelectorAll('a').forEach(function (link) {
+            link.addEventListener('click', function () {
+                navLinks.classList.remove('open');
+                navToggle.classList.remove('open');
+                navToggle.setAttribute('aria-expanded', 'false');
+            });
+        });
+    </script>
 
 </body>
 </html>
