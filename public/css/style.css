@@ -812,3 +812,212 @@ a {
         font-size: 15px;
     }
 }
+
+/* ============================================
+   CONTACT US SECTION
+   ============================================ */
+.contact-section {
+    padding: 90px 0;
+    background-color: #f8fafc;
+    border-top: 1px solid #e2e8f0;
+}
+
+.contact-subtitle {
+    text-align: center;
+    color: #475569;
+    font-size: 17px;
+    margin-top: -40px;
+    margin-bottom: 60px;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Two-column grid */
+.contact-grid {
+    display: grid;
+    grid-template-columns: 1.4fr 1fr;
+    gap: 40px;
+    align-items: start;
+}
+
+/* --- Left Card: contact info --- */
+.contact-info-card {
+    background-color: #ffffff;
+    border: 1px solid #e2e8f0;
+    border-radius: 12px;
+    padding: 40px;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.06);
+}
+
+.contact-info-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 16px;
+    margin-bottom: 28px;
+}
+
+.contact-info-icon {
+    width: 52px;
+    height: 52px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+}
+
+.contact-info-icon img {
+    width: 36px;
+    height: 36px;
+    object-fit: contain;
+    display: block;
+}
+
+.contact-info-item h4 {
+    font-size: 13px;
+    text-transform: uppercase;
+    letter-spacing: 0.8px;
+    color: #94a3b8;
+    margin-bottom: 4px;
+}
+
+.contact-info-item a,
+.contact-info-item span {
+    font-size: 16px;
+    font-weight: 600;
+    color: #1e293b;
+    transition: color 0.2s;
+}
+
+.contact-info-item a:hover {
+    color: #1e3a8a;
+}
+
+.contact-email-btn {
+    display: block;
+    width: 100%;
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 12px;
+    padding: 14px;
+    font-size: 15px;
+    border-radius: 8px;
+}
+
+/* WhatsApp Button */
+.btn-whatsapp {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    width: 100%;
+    padding: 14px;
+    background-color: #25d366;
+    color: #ffffff;
+    border-radius: 8px;
+    font-weight: 700;
+    font-size: 15px;
+    border: 2px solid #22c55e;
+    transition: background-color 0.2s ease, transform 0.15s ease;
+    text-decoration: none;
+}
+
+.btn-whatsapp:hover {
+    background-color: #1ebe5d;
+    transform: translateY(-2px);
+}
+
+/* --- Right Card: hours + social --- */
+.contact-side-card {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.contact-hours,
+.contact-social {
+    background-color: #ffffff;
+    border: 1px solid #e2e8f0;
+    border-radius: 12px;
+    padding: 30px;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.05);
+}
+
+.contact-hours h4,
+.contact-social h4 {
+    font-size: 14px;
+    text-transform: uppercase;
+    letter-spacing: 0.8px;
+    color: #1e3a8a;
+    margin-bottom: 18px;
+    padding-bottom: 10px;
+    border-bottom: 2px solid #e2e8f0;
+}
+
+.hours-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.hours-list li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0;
+    border-bottom: 1px solid #f1f5f9;
+    font-size: 14.5px;
+}
+
+.hours-list li:last-child {
+    border-bottom: none;
+}
+
+.hours-list li span {
+    color: #64748b;
+}
+
+.hours-list li strong {
+    color: #1e293b;
+    font-weight: 600;
+}
+
+/* Social icons inside contact card */
+.contact-social-links {
+    display: flex;
+    gap: 12px;
+    flex-wrap: wrap;
+}
+
+/* Responsive: stack on tablet */
+@media (max-width: 900px) {
+    .contact-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .contact-side-card {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .contact-hours,
+    .contact-social {
+        flex: 1;
+        min-width: 240px;
+    }
+}
+
+@media (max-width: 480px) {
+    .contact-info-card {
+        padding: 24px 20px;
+    }
+
+    .contact-side-card {
+        flex-direction: column;
+    }
+
+    .contact-subtitle {
+        font-size: 15px;
+        margin-bottom: 40px;
+    }
+}

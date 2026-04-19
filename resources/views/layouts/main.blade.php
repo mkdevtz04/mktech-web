@@ -87,15 +87,15 @@
                 <h4>Connect With Us</h4>
                 <p style="margin-bottom: 18px;">Follow us across social media for updates, tips, and technical insights.</p>
                 <div class="social-links">
-                    <a href="#" class="social-icon" title="Instagram">
+                    <a href="https://www.linkedin.com/in/costantine-ntui-65114926a" class="social-icon" title="Instagram">
                         <img src="{{ asset('images/in.png') }}" alt="Instagram">
                     </a>
                     <a href="#" class="social-icon" title="TikTok">
                         <img src="{{ asset('images/tk.png') }}" alt="TikTok">
                     </a>
-                    <a href="#" class="social-icon" title="LinkedIn">
+                    <!-- <a href="#" class="social-icon" title="LinkedIn">
                         <img src="{{ asset('images/in.png') }}" alt="LinkedIn">
-                    </a>
+                    </a> -->
                     <a href="#" class="social-icon" title="Facebook">
                         <img src="{{ asset('images/fb.png') }}" alt="Facebook">
                     </a>

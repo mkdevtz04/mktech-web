@@ -154,4 +154,64 @@
         </div>
     </section>
 
+    <!-- Contact Us Section -->
+    <section id="contact" class="contact-section">
+        <div class="container">
+            <h2 class="section-title">Get In Touch</h2>
+            <p class="contact-subtitle">Have a project in mind or need a consultation? Reach out — we respond within 24 hours.</p>
+
+            <div class="contact-grid">
+
+                <!-- Contact Info Card -->
+                <div class="contact-info-card">
+                    <div class="contact-info-item">
+                        <div class="contact-info-icon">
+                            <img src="{{ asset('images/mail.png') }}" alt="Email">
+                        </div>
+                        <div>
+                            <h4>Email Us</h4>
+                            <a href="mailto:costantinentui04@gmail.com">costantinentui04@gmail.com</a>
+                        </div>
+                    </div>
+
+                    <div class="contact-info-item">
+                        <div class="contact-info-icon">
+                            <img src="{{ asset('images/call.png') }}" alt="Phone">
+                        </div>
+                        <div>
+                            <h4>Call / WhatsApp</h4>
+                            <a href="tel:+255626267747">+255 626 267 747</a>
+                        </div>
+                    </div>
+
+                    <div class="contact-info-item">
+                        <div class="contact-info-icon">
+                            <img src="{{ asset('images/location.png') }}" alt="Location">
+                        </div>
+                        <div>
+                            <h4>Location</h4>
+                            <span>Dar es Salaam, Tanzania</span>
+                        </div>
+                    </div>
+
+                   
+                </div>
+
+                <!-- Working Hours & Social -->
+                <div class="contact-side-card">
+                    <div class="contact-hours">
+                        <h4>Business Hours</h4>
+                        <ul class="hours-list">
+                            <li><span>Monday – Friday</span><strong>8:00 AM – 6:00 PM</strong></li>
+                            <li><span>Saturday</span><strong>9:00 AM – 3:00 PM</strong></li>
+                            <li><span>Sunday</span><strong>Closed</strong></li>
+                        </ul>
+                    </div>
+                    
+                </div>
+
+            </div>
+        </div>
+    </section>
+
 @endsection
