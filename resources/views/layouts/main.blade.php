@@ -12,7 +12,7 @@
     <!-- Dark Blue Navigation Bar -->
     <header class="navbar">
         <div class="container">
-            <div class="brand"><a href="{{ url('/') }}" style="color: white;">Mktech</a></div>
+            <div class="brand"><a href="{{ url('/') }}" style="color: white;"><img src="{{ asset('images/mktech.jpg') }}" alt="Logo"></a></div>
             <!-- Hamburger button (mobile) -->
             <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation" aria-expanded="false">
                 <span></span>
@@ -90,16 +90,16 @@
                     <a href="https://www.linkedin.com/in/costantine-ntui-65114926a" class="social-icon" title="Instagram">
                         <img src="{{ asset('images/in.png') }}" alt="Instagram">
                     </a>
-                    <a href="#" class="social-icon" title="TikTok">
+                    <a href="https://www.tiktok.com/@m_graphics_design" class="social-icon" title="TikTok">
                         <img src="{{ asset('images/tk.png') }}" alt="TikTok">
                     </a>
                     <!-- <a href="#" class="social-icon" title="LinkedIn">
                         <img src="{{ asset('images/in.png') }}" alt="LinkedIn">
                     </a> -->
-                    <a href="#" class="social-icon" title="Facebook">
+                    <a href="https://www.facebook.com/profile.php?id=100025247079880" class="social-icon" title="Facebook">
                         <img src="{{ asset('images/fb.png') }}" alt="Facebook">
                     </a>
-                    <a href="#" class="social-icon" title="WhatsApp">
+                    <a href="https://wa.me/255626267747" class="social-icon" title="WhatsApp">
                         <img src="{{ asset('images/whatsup.png') }}" alt="WhatsApp">
                     </a>
                 </div>

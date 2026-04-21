@@ -88,9 +88,26 @@ a {
 }
 
 .navbar .brand {
-    font-size: 26px;
-    font-weight: 700;
-    letter-spacing: 1px;
+    display: flex;
+    align-items: center;
+}
+
+.navbar .brand a {
+    display: flex;
+    align-items: center;
+    transition: opacity 0.2s ease;
+}
+
+.navbar .brand a:hover {
+    opacity: 0.85;
+}
+
+.navbar .brand img {
+    height: 46px;
+    width: auto;
+    object-fit: contain;
+    display: block;
+    border-radius: 6px;
 }
 
 .navbar .nav-links {
@@ -779,8 +796,8 @@ a {
         font-size: 28px;
     }
 
-    .navbar .brand {
-        font-size: 22px;
+    .navbar .brand img {
+        height: 38px;
     }
 
     .footer-col .brand {
