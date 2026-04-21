@@ -21,13 +21,13 @@
             </button>
             <ul class="nav-links" id="navLinks">
                 <li><a href="{{ url('/#services') }}">Services</a></li>
-                <li><a href="{{ url('/#about') }}">About</a></li>
+                <!-- <li><a href="{{ url('/#about') }}">About</a></li> -->
                 <li><a href="{{ url('/#contact') }}">Contact</a></li>
                 @if (Route::has('login'))
                     @auth
                         <li><a href="{{ url('/dashboard') }}">Dashboard</a></li>
                     @else
-                        <li><a href="{{ route('login') }}">Log in</a></li>
+                        <li><a href="{{ route('login') }}"></a></li>
                     @endauth
                 @endif
             </ul>
