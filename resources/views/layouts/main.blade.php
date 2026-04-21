@@ -83,25 +83,23 @@
             </div>
 
             <!-- Column 4: Social Media -->
-            <div class="footer-col">
-                <h4>Connect With Us</h4>
-                <p style="margin-bottom: 18px;">Follow us across social media for updates, tips, and technical insights.</p>
-                <div class="social-links">
-                    <a href="https://www.linkedin.com/in/costantine-ntui-65114926a" class="social-icon" title="Instagram">
-                        <img src="{{ asset('images/in.png') }}" alt="Instagram">
-                    </a>
-                    <a href="https://www.tiktok.com/@m_graphics_design" class="social-icon" title="TikTok">
-                        <img src="{{ asset('images/tk.png') }}" alt="TikTok">
-                    </a>
-                    <!-- <a href="#" class="social-icon" title="LinkedIn">
-                        <img src="{{ asset('images/in.png') }}" alt="LinkedIn">
-                    </a> -->
-                    <a href="https://www.facebook.com/profile.php?id=100025247079880" class="social-icon" title="Facebook">
-                        <img src="{{ asset('images/fb.png') }}" alt="Facebook">
-                    </a>
-                    <a href="https://wa.me/255626267747" class="social-icon" title="WhatsApp">
-                        <img src="{{ asset('images/whatsup.png') }}" alt="WhatsApp">
-                    </a>
+                <div class="footer-col">
+                        <h4>Connect With Us</h4>
+                        <p style="margin-bottom: 18px;">Follow us across social media for updates, tips, and technical insights.</p>
+                        <div class="social-links">
+                            <a href="https://www.linkedin.com/in/costantine-ntui-65114926a" class="social-icon" title="LinkedIn" target="_blank" rel="noopener noreferrer">
+                            <img src="{{ asset('images/in.png') }}" alt="LinkedIn">
+                            </a>
+                            <a href="https://www.tiktok.com/@m_graphics_design" class="social-icon" title="TikTok" target="_blank" rel="noopener noreferrer">
+                                <img src="{{ asset('images/tk.png') }}" alt="TikTok">
+                            </a>
+                            <a href="https://www.facebook.com/profile.php?id=100025247079880" class="social-icon" title="Facebook" target="_blank" rel="noopener noreferrer">
+                                <img src="{{ asset('images/fb.png') }}" alt="Facebook">
+                            </a>
+                            <a href="https://wa.me/255626267747" class="social-icon" title="WhatsApp" target="_blank" rel="noopener noreferrer">
+                                <img src="{{ asset('images/whatsup.png') }}" alt="WhatsApp">
+                            </a>
+                    </div>
                 </div>
             </div>
         </div>
