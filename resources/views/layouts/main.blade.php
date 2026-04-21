@@ -6,6 +6,15 @@
     <title>@yield('title', 'Mktech | Professional IT Services')</title>
     <!-- Normal Custom CSS File -->
     <link rel="stylesheet" href="{{ asset('css/style.css') }}?v={{ filemtime(public_path('css/style.css')) }}">
+     <!-- Google Analytics -->
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-8X2NWE8SC0"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-8X2NWE8SC0');
+    </script>
 </head>
 <body>
 
