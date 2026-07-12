@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="google-site-verification" content="T9oXdiUDayG-u0kXn_FyCfHWs_vl9LmgdqyLqRcla8A" />
     <title>@yield('title', 'Mktech | Professional IT Services')</title>
     <!-- Normal Custom CSS File -->
     <link rel="stylesheet" href="{{ asset('css/style.css') }}?v={{ filemtime(public_path('css/style.css')) }}">
