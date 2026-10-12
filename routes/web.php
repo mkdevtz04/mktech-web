@@ -7,6 +7,8 @@ Route::view('/', 'welcome');
 Route::view('/about', 'about')->name('about');
 Route::view('/portfolio', 'portfolio')->name('portfolio');
 Route::view('/faq', 'faq')->name('faq');
+Route::view('/privacy-policy', 'privacy-policy')->name('privacy');
+Route::view('/terms-of-service', 'terms-of-service')->name('terms');
 
 Route::view('/services/it', 'services.it')->name('services.it');
 Route::view('/services/graphics', 'services.graphics')->name('services.graphics');

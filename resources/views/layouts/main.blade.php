@@ -109,8 +109,8 @@
                     <li><a href="{{ route('portfolio') }}">Portfolio</a></li>
                     <li><a href="{{ route('faq') }}">FAQ</a></li>
                     <li><a href="{{ url('/#contact') }}">Get a Quote</a></li>
-                    <li><a href="#">Privacy Policy</a></li>
-                    <li><a href="#">Terms of Service</a></li>
+                    <li><a href="{{ route('privacy') }}">Privacy Policy</a></li>
+                    <li><a href="{{ route('terms') }}">Terms of Service</a></li>
                 </ul>
             </div>
 
@@ -140,8 +140,8 @@
             <div class="container">
                 <p>&copy; {{ date('Y') }} Mktech. All rights reserved.</p>
                 <ul class="footer-bottom-links">
-                    <li><a href="#">Privacy Policy</a></li>
-                    <li><a href="#">Terms of Service</a></li>
+                    <li><a href="{{ route('privacy') }}">Privacy Policy</a></li>
+                    <li><a href="{{ route('terms') }}">Terms of Service</a></li>
                     <li><a href="{{ url('/#contact') }}">Contact Us</a></li>
                 </ul>
             </div>
