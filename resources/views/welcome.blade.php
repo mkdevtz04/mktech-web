@@ -1,79 +1,84 @@
 @extends('layouts.main')
 
 @section('content')
-    <!-- White Hero Section with Black Text -->
+    <!-- Hero Section -->
     <section class="hero">
         <div class="container">
             <div class="hero-content">
-                <h1>Professional Technology & Security Solutions</h1>
+                <p class="eyebrow">Technology & Security Partner</p>
+                <h1>Professional Technology <span class="accent">&amp; Security Solutions</span></h1>
                 <p>Mktech is your trusted agency for website development, IT infrastructure, graphic design, and CCTV security installations. Reliable, effective, and built for businesses.</p>
                 <div class="hero-actions">
                     <a href="#services" class="btn btn-primary">Our Services</a>
                     <a href="#contact" class="btn btn-outline">Contact Us</a>
                 </div>
             </div>
-            <!-- Simple placeholder representing an image on the right -->
             <div class="hero-image-box">
-                <img src="{{ asset('images/main.png') }}" style="width: 100%; height: 100%;" alt="Hero Image">
+                <img src="{{ asset('images/main.png') }}" alt="Mktech technology and security solutions">
             </div>
         </div>
     </section>
 
-    <!-- White Services Section -->
+    <!-- Services Section -->
     <section id="services" class="services">
         <div class="container">
-            <h2 class="section-title">What We Do</h2>
+            <div class="section-head center">
+                <p class="eyebrow">What We Do</p>
+                <h2 class="section-title">Our Services</h2>
+                <p class="section-lead">Full-stack technology solutions — from the systems that run your business to the cameras that protect it.</p>
+            </div>
+
             <div class="services-grid">
-                
-                <div class="service-card" onclick="window.location='{{ route('services.it') }}'" style="cursor: pointer;">
+
+                <div class="service-card" onclick="window.location='{{ route('services.it') }}'">
                     <div class="service-icon">
-                        <img src="{{ asset('images/mis.png') }}" style="width: 80%; height: 80%;" alt="Hero Image">
+                        <img src="{{ asset('images/mis.png') }}" alt="IT Services">
                     </div>
                     <h3>IT Services</h3>
                     <p>Complete IT infrastructure setup and maintenance. We manage networks, hardware, and provide dedicated technical support for your office.</p>
-                    <a href="{{ route('services.it') }}" style="color: #1e3a8a; font-weight: bold; display: inline-block; margin-top: 10px;">Learn more &rarr;</a>
+                    <a href="{{ route('services.it') }}" class="service-link">Learn more &rarr;</a>
                 </div>
 
-                <div class="service-card" onclick="window.location='{{ route('services.graphics') }}'" style="cursor: pointer;">
+                <div class="service-card" onclick="window.location='{{ route('services.graphics') }}'">
                     <div class="service-icon">
-                        <img src="{{ asset('images/design.png') }}" style="width: 80%; height: 80%;" alt="Hero Image">
+                        <img src="{{ asset('images/design.png') }}" alt="Graphics Design">
                     </div>
                     <h3>Graphics Design</h3>
                     <p>Corporate branding, logo creation, and promotional materials designed to give your business a polished and professional look.</p>
-                    <a href="{{ route('services.graphics') }}" style="color: #1e3a8a; font-weight: bold; display: inline-block; margin-top: 10px;">Learn more &rarr;</a>
+                    <a href="{{ route('services.graphics') }}" class="service-link">Learn more &rarr;</a>
                 </div>
 
-                <div class="service-card" onclick="window.location='{{ route('services.web') }}'" style="cursor: pointer;">
+                <div class="service-card" onclick="window.location='{{ route('services.web') }}'">
                     <div class="service-icon">
-                        <img src="{{ asset('images/web.png') }}" style="width: 80%; height: 80%;" alt="Hero Image">
+                        <img src="{{ asset('images/web.png') }}" alt="Website Development">
                     </div>
                     <h3>Website Development</h3>
                     <p>Standard, responsive web applications built with reliability in mind to serve your clients and manage your operations smoothly.</p>
-                    <a href="{{ route('services.web') }}" style="color: #1e3a8a; font-weight: bold; display: inline-block; margin-top: 10px;">Learn more &rarr;</a>
+                    <a href="{{ route('services.web') }}" class="service-link">Learn more &rarr;</a>
                 </div>
 
-                <div class="service-card" onclick="window.location='{{ route('services.mobile') }}'" style="cursor: pointer;">
+                <div class="service-card" onclick="window.location='{{ route('services.mobile') }}'">
                     <div class="service-icon">
-                        <img src="{{ asset('images/mob.png') }}" style="width: 90%; height: 90%;" alt="Hero Image">
+                        <img src="{{ asset('images/mob.png') }}" alt="Mobile App Development">
                     </div>
                     <h3>Mobile App Development</h3>
                     <p>Secure and user-friendly mobile applications for Android and iOS devices, streamlining accessibility for your customers.</p>
-                    <a href="{{ route('services.mobile') }}" style="color: #1e3a8a; font-weight: bold; display: inline-block; margin-top: 10px;">Learn more &rarr;</a>
+                    <a href="{{ route('services.mobile') }}" class="service-link">Learn more &rarr;</a>
                 </div>
 
-                <div class="service-card" onclick="window.location='{{ route('services.cctv') }}'" style="cursor: pointer;">
+                <div class="service-card" onclick="window.location='{{ route('services.cctv') }}'">
                     <div class="service-icon">
-                        <img src="{{ asset('images/cctv.png') }}" style="width: 90%; height: 90%;" alt="Hero Image">
+                        <img src="{{ asset('images/cctv.png') }}" alt="CCTV Camera & Security">
                     </div>
                     <h3>CCTV Camera & Security</h3>
                     <p>Professional installation of CCTV systems, access controls, and modern security gadgets to protect your physical premises.</p>
-                    <a href="{{ route('services.cctv') }}" style="color: #1e3a8a; font-weight: bold; display: inline-block; margin-top: 10px;">Learn more &rarr;</a>
+                    <a href="{{ route('services.cctv') }}" class="service-link">Learn more &rarr;</a>
                 </div>
 
-                <div class="service-card" style="background-color: #1e3a8a; border: none;">
-                    <h3 style="color: #ffffff; margin-top: 15px;">Need a Custom Service?</h3>
-                    <p style="color: #ffffff; margin-bottom: 25px;">We offer tailored technology solutions for your unique business requirements.</p>
-                    <a href="#contact" style="color: #ffffff; font-weight: bold; text-decoration: underline;">Reach out to us &rarr;</a>
+                <div class="service-card service-card--invert">
+                    <h3>Need a Custom Service?</h3>
+                    <p>We offer tailored technology solutions for your unique business requirements.</p>
+                    <a href="#contact" class="service-link">Reach out to us &rarr;</a>
                 </div>
 
             </div>
@@ -83,13 +88,16 @@
     <!-- Our Team Section -->
     <section id="team" class="team-section">
         <div class="container">
-            <h2 class="section-title">Meet Our Experts</h2>
+            <div class="section-head center">
+                <p class="eyebrow">Our People</p>
+                <h2 class="section-title">Meet Our Experts</h2>
+            </div>
             <div class="team-grid">
-                
+
                 <!-- Developer -->
                 <div class="team-card">
                     <div class="team-img-placeholder">
-                     <img src="{{ asset('images/ps.png') }}" style="width: 100%; height: 100%;" alt="Hero Image">
+                        <img src="{{ asset('images/ps.png') }}" alt="Costantine Clement">
                     </div>
                     <h3>Costantine Clement</h3>
                     <p class="role">Lead Developer</p>
@@ -99,7 +107,7 @@
                 <!-- Graphics Designer -->
                 <div class="team-card">
                     <div class="team-img-placeholder">
-                        <img src="{{ asset('images/cj.png') }}" style="width: 100%; height: 100%;" alt="Hero Image">
+                        <img src="{{ asset('images/cj.png') }}" alt="Erasto Kamuli">
                     </div>
                     <h3>Erasto Kamuli</h3>
                     <p class="role">Graphics Designer</p>
@@ -109,7 +117,7 @@
                 <!-- Sales Head -->
                 <div class="team-card">
                     <div class="team-img-placeholder">
-                     <img src="{{ asset('images/kido.png') }}" style="width: 90%; height: 100%;" alt="Hero Image">
+                        <img src="{{ asset('images/kido.png') }}" alt="Kido">
                     </div>
                     <h3>Kido</h3>
                     <p class="role">Sales Head</p>
@@ -123,12 +131,15 @@
     <!-- Testimonials Section -->
     <section id="testimonials" class="testimonials-section">
         <div class="container">
-            <h2 class="section-title">What Our Clients Say</h2>
+            <div class="section-head center">
+                <p class="eyebrow">Client Feedback</p>
+                <h2 class="section-title">What Our Clients Say</h2>
+            </div>
             <div class="testimonial-grid">
-                
+
                 <!-- Testimonial 1 -->
                 <div class="testimonial-card">
-                    <div class="testimonial-quote-icon">"</div>
+                    <div class="testimonial-quote-icon">&ldquo;</div>
                     <p class="quote">"Mktech completely transformed our corporate IT infrastructure. Their dedicated developer team delivered a seamless web application that doubled our daily transaction capabilities safely."</p>
                     <div class="testimonial-author">Adam Lwena</div>
                     <div class="testimonial-company">CEO, lwenahub Solutions</div>
@@ -136,7 +147,7 @@
 
                 <!-- Testimonial 2 -->
                 <div class="testimonial-card">
-                    <div class="testimonial-quote-icon">"</div>
+                    <div class="testimonial-quote-icon">&ldquo;</div>
                     <p class="quote">"The graphics design team at Mktech redefined our brand identity from scratch. Their creativity combined with their technical expertise in mobile app development is unmatched."</p>
                     <div class="testimonial-author">Timoth H.</div>
                     <div class="testimonial-company">Marketing Director, RetailBrand</div>
@@ -144,7 +155,7 @@
 
                 <!-- Testimonial 3 -->
                 <div class="testimonial-card">
-                    <div class="testimonial-quote-icon">"</div>
+                    <div class="testimonial-quote-icon">&ldquo;</div>
                     <p class="quote">"We hired Mktech for a massive CCTV and security installation across our 4 branch offices. Their team was extremely professional, and the camera network is incredibly reliable."</p>
                     <div class="testimonial-author">Omar K.</div>
                     <div class="testimonial-company">Operations Manager, LogisticsPro</div>
@@ -157,8 +168,11 @@
     <!-- Contact Us Section -->
     <section id="contact" class="contact-section">
         <div class="container">
-            <h2 class="section-title">Get In Touch</h2>
-            <p class="contact-subtitle">Have a project in mind or need a consultation? Reach out — we respond within 24 hours.</p>
+            <div class="section-head center">
+                <p class="eyebrow">Contact</p>
+                <h2 class="section-title">Get In Touch</h2>
+                <p class="contact-subtitle">Have a project in mind or need a consultation? Reach out — we respond within 24 hours.</p>
+            </div>
 
             <div class="contact-grid">
 
@@ -193,11 +207,9 @@
                             <span>Dar es Salaam, Tanzania</span>
                         </div>
                     </div>
-
-                   
                 </div>
 
-                <!-- Working Hours & Social -->
+                <!-- Working Hours -->
                 <div class="contact-side-card">
                     <div class="contact-hours">
                         <h4>Business Hours</h4>
@@ -207,7 +219,6 @@
                             <li><span>Sunday</span><strong>Closed</strong></li>
                         </ul>
                     </div>
-                    
                 </div>
 
             </div>
