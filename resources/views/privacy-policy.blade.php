@@ -32,6 +32,11 @@
             <li>To comply with legal obligations where applicable</li>
         </ul>
 
+        <h2>Cookies</h2>
+        <p>This site uses Google Analytics to understand how visitors use it &mdash; which pages are viewed, roughly where visitors are located, and what kind of device they're using. Google Analytics sets small cookies (<code>_ga</code>, <code>_gid</code>) in your browser to do this. We don't use this data to identify you personally, and we don't use cookies for advertising.</p>
+        <p>When you first visit, a banner lets you accept or decline this analytics tracking. If you decline, the Analytics cookies are disabled for your browser going forward. Essential cookies that keep the site itself working (for example, keeping you logged in) are not affected by this choice, since the site can't function without them.</p>
+        <p>You can also control or delete cookies through your browser's settings at any time. Google's own handling of Analytics data is covered by <a href="https://policies.google.com/privacy" class="text-link" target="_blank" rel="noopener noreferrer">Google's Privacy Policy</a>.</p>
+
         <h2>Sharing of Information</h2>
         <p>We do not sell your personal information. We may share information with service providers who help us operate this website or deliver a project (for example, hosting providers), and only to the extent needed for that purpose. We do not share your information with third parties for their own marketing purposes.</p>
 

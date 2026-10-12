@@ -16,6 +16,17 @@
             } catch (e) {}
         })();
     </script>
+    <script>
+        // Honor a previously declined cookie choice before gtag.js loads below.
+        // Google's documented opt-out flag: window['ga-disable-<MEASUREMENT_ID>'].
+        (function () {
+            try {
+                if (localStorage.getItem('mktech-cookie-consent') === 'declined') {
+                    window['ga-disable-G-8X2NWE8SC0'] = true;
+                }
+            } catch (e) {}
+        })();
+    </script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <!-- Normal Custom CSS File -->
@@ -148,6 +159,16 @@
         </div>
     </footer>
 
+    <div class="cookie-banner" id="cookieBanner" role="dialog" aria-label="Cookie notice" hidden>
+        <div class="cookie-banner-inner">
+            <p>We use cookies to understand how visitors use this site. See our <a href="{{ route('privacy') }}" class="text-link">Privacy Policy</a>.</p>
+            <div class="cookie-banner-actions">
+                <button type="button" class="btn btn-outline" id="cookieDecline">Decline</button>
+                <button type="button" class="btn btn-primary" id="cookieAccept">Accept</button>
+            </div>
+        </div>
+    </div>
+
     <script>
         // Light / dark theme toggle
         const themeToggle = document.getElementById('themeToggle');
@@ -196,6 +217,32 @@
                 }
             });
         });
+
+        // Cookie notice
+        (function () {
+            const KEY = 'mktech-cookie-consent';
+            const MEASUREMENT_ID = 'G-8X2NWE8SC0';
+            const banner = document.getElementById('cookieBanner');
+            if (!banner) return;
+
+            let stored = null;
+            try { stored = localStorage.getItem(KEY); } catch (e) {}
+
+            if (!stored) {
+                banner.hidden = false;
+            }
+
+            document.getElementById('cookieAccept').addEventListener('click', function () {
+                try { localStorage.setItem(KEY, 'accepted'); } catch (e) {}
+                banner.hidden = true;
+            });
+
+            document.getElementById('cookieDecline').addEventListener('click', function () {
+                try { localStorage.setItem(KEY, 'declined'); } catch (e) {}
+                window['ga-disable-' + MEASUREMENT_ID] = true;
+                banner.hidden = true;
+            });
+        })();
     </script>
 
 </body>

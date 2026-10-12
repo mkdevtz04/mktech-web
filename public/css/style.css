@@ -1103,6 +1103,52 @@ input:focus-visible {
 }
 
 /* ============================================
+   COOKIE NOTICE
+   ============================================ */
+.cookie-banner {
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 1200;
+    background-color: var(--bg-raised);
+    border-top: 1px solid var(--line-strong);
+}
+
+.cookie-banner[hidden] {
+    display: none;
+}
+
+.cookie-banner-inner {
+    max-width: var(--container-max);
+    margin: 0 auto;
+    padding: 22px 32px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 24px;
+    flex-wrap: wrap;
+}
+
+.cookie-banner-inner p {
+    font-size: 14.5px;
+    margin: 0;
+    max-width: 60ch;
+}
+
+.cookie-banner-actions {
+    display: flex;
+    gap: 12px;
+    flex-shrink: 0;
+}
+
+.cookie-banner-actions .btn {
+    height: 42px;
+    padding: 0 22px;
+    font-size: 11.5px;
+}
+
+/* ============================================
    INNER / SERVICE DETAIL PAGES
    ============================================ */
 .page-header {
@@ -1474,6 +1520,13 @@ input:focus-visible {
     color: var(--ink);
 }
 
+.legal-content code {
+    font-family: var(--font-mono);
+    font-size: 0.9em;
+    background-color: var(--bg-sunken);
+    padding: 2px 6px;
+}
+
 /* ============================================
    AUTH (login — shares this stylesheet via layouts.main)
    ============================================ */
@@ -1774,6 +1827,22 @@ input:focus-visible {
 
     .faq-answer p {
         padding: 0 22px 20px;
+    }
+
+    /* Cookie notice */
+    .cookie-banner-inner {
+        padding: 18px 20px;
+        flex-direction: column;
+        align-items: stretch;
+        gap: 14px;
+    }
+
+    .cookie-banner-actions {
+        justify-content: stretch;
+    }
+
+    .cookie-banner-actions .btn {
+        flex: 1;
     }
 }
 
