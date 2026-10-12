@@ -171,7 +171,7 @@
             <div class="section-head center">
                 <p class="eyebrow">Contact</p>
                 <h2 class="section-title">Get In Touch</h2>
-                <p class="contact-subtitle">Have a project in mind or need a consultation? Reach out — we respond within 24 hours.</p>
+                <p class="contact-subtitle">Have a project in mind or need a consultation? Reach out — we respond within 24 hours. Have a quick question first? Check our <a href="{{ route('faq') }}" class="text-link">FAQ</a>.</p>
             </div>
 
             <div class="contact-grid">

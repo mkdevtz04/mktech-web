@@ -28,6 +28,45 @@
                 <li>Web Portals & Custom CRM Integrations</li>
                 <li>SEO Optimization & Website Security Audits</li>
             </ul>
+
+            <h3>How We Work</h3>
+            <ol class="process-steps">
+                <li class="process-step">
+                    <span class="process-step-index">01</span>
+                    <div class="process-step-body">
+                        <h4>Discover</h4>
+                        <p>Understand your business, audience, and what the site needs to do.</p>
+                    </div>
+                </li>
+                <li class="process-step">
+                    <span class="process-step-index">02</span>
+                    <div class="process-step-body">
+                        <h4>Design</h4>
+                        <p>Wireframe and design the layout and look before any code is written.</p>
+                    </div>
+                </li>
+                <li class="process-step">
+                    <span class="process-step-index">03</span>
+                    <div class="process-step-body">
+                        <h4>Build</h4>
+                        <p>Develop the site with performance and security built in from the start.</p>
+                    </div>
+                </li>
+                <li class="process-step">
+                    <span class="process-step-index">04</span>
+                    <div class="process-step-body">
+                        <h4>Test</h4>
+                        <p>QA across devices and browsers, fixing issues before launch.</p>
+                    </div>
+                </li>
+                <li class="process-step">
+                    <span class="process-step-index">05</span>
+                    <div class="process-step-body">
+                        <h4>Launch & Support</h4>
+                        <p>Go live, then ongoing updates and security monitoring.</p>
+                    </div>
+                </li>
+            </ol>
         </div>
 
         <x-service-sidebar

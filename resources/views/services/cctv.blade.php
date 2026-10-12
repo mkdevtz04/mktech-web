@@ -28,6 +28,45 @@
                 <li>Remote Monitoring Setup via Web and Mobile</li>
                 <li>Routine Security Maintenance and Upgrades</li>
             </ul>
+
+            <h3>How We Work</h3>
+            <ol class="process-steps">
+                <li class="process-step">
+                    <span class="process-step-index">01</span>
+                    <div class="process-step-body">
+                        <h4>Site Survey</h4>
+                        <p>Assess your premises to identify coverage needs and blind spots.</p>
+                    </div>
+                </li>
+                <li class="process-step">
+                    <span class="process-step-index">02</span>
+                    <div class="process-step-body">
+                        <h4>Plan</h4>
+                        <p>Propose camera placement, equipment, and access control setup.</p>
+                    </div>
+                </li>
+                <li class="process-step">
+                    <span class="process-step-index">03</span>
+                    <div class="process-step-body">
+                        <h4>Install</h4>
+                        <p>Professional installation with minimal disruption to your operations.</p>
+                    </div>
+                </li>
+                <li class="process-step">
+                    <span class="process-step-index">04</span>
+                    <div class="process-step-body">
+                        <h4>Test</h4>
+                        <p>Verify footage quality, coverage, and remote access before handoff.</p>
+                    </div>
+                </li>
+                <li class="process-step">
+                    <span class="process-step-index">05</span>
+                    <div class="process-step-body">
+                        <h4>Support</h4>
+                        <p>Ongoing maintenance and monitoring setup assistance.</p>
+                    </div>
+                </li>
+            </ol>
         </div>
 
         <x-service-sidebar

@@ -28,6 +28,45 @@
                 <li>Mobile App UI/UX Design & Prototyping</li>
                 <li>App Store Deployment and Ongoing Maintenance</li>
             </ul>
+
+            <h3>How We Work</h3>
+            <ol class="process-steps">
+                <li class="process-step">
+                    <span class="process-step-index">01</span>
+                    <div class="process-step-body">
+                        <h4>Discover</h4>
+                        <p>Define the app's core features and who it's built for.</p>
+                    </div>
+                </li>
+                <li class="process-step">
+                    <span class="process-step-index">02</span>
+                    <div class="process-step-body">
+                        <h4>Design</h4>
+                        <p>Prototype the UI/UX before development begins.</p>
+                    </div>
+                </li>
+                <li class="process-step">
+                    <span class="process-step-index">03</span>
+                    <div class="process-step-body">
+                        <h4>Build</h4>
+                        <p>Develop for Android, iOS, or cross-platform, depending on your needs.</p>
+                    </div>
+                </li>
+                <li class="process-step">
+                    <span class="process-step-index">04</span>
+                    <div class="process-step-body">
+                        <h4>Test</h4>
+                        <p>QA across real devices to catch issues before release.</p>
+                    </div>
+                </li>
+                <li class="process-step">
+                    <span class="process-step-index">05</span>
+                    <div class="process-step-body">
+                        <h4>Launch & Support</h4>
+                        <p>App store deployment, then ongoing updates and maintenance.</p>
+                    </div>
+                </li>
+            </ol>
         </div>
 
         <x-service-sidebar

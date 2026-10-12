@@ -125,6 +125,12 @@ ul {
     list-style: none;
 }
 
+.text-link {
+    color: var(--brand);
+    text-decoration: underline;
+    text-underline-offset: 2px;
+}
+
 a:focus-visible,
 button:focus-visible,
 input:focus-visible {
@@ -673,6 +679,110 @@ input:focus-visible {
 }
 
 /* ============================================
+   PORTFOLIO
+   ============================================ */
+.portfolio-section {
+    padding: 70px 0 20px;
+}
+
+.portfolio-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
+    gap: 1px;
+    background-color: var(--line);
+    border: 1px solid var(--line);
+    margin-top: 56px;
+}
+
+.section-head.center .hero-actions {
+    justify-content: center;
+    margin-top: 30px;
+}
+
+.portfolio-card {
+    background-color: var(--bg-raised);
+    display: flex;
+    flex-direction: column;
+}
+
+.portfolio-media {
+    width: 100%;
+    aspect-ratio: 16 / 10;
+    background-color: #ffffff;
+    border-bottom: 1px solid var(--line);
+    overflow: hidden;
+}
+
+.portfolio-media img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.portfolio-media-placeholder {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--bg-sunken);
+}
+
+.portfolio-media-placeholder span {
+    font-family: var(--font-mono);
+    font-size: 11px;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--faint);
+}
+
+.portfolio-body {
+    padding: 32px;
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+.portfolio-category {
+    font-family: var(--font-mono);
+    font-size: 11px;
+    font-weight: 600;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--brand);
+    margin-bottom: 14px;
+}
+
+.portfolio-body h3 {
+    font-size: 21px;
+    margin-bottom: 12px;
+}
+
+.portfolio-body p {
+    font-size: 15.5px;
+    line-height: 1.75;
+    margin-bottom: 20px;
+    flex: 1;
+}
+
+.portfolio-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    font-family: var(--font-mono);
+    font-size: 11.5px;
+    font-weight: 600;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--brand);
+    align-self: flex-start;
+}
+
+.portfolio-link:hover {
+    text-decoration: underline;
+}
+
+/* ============================================
    CONTACT
    ============================================ */
 .contact-section {
@@ -1176,6 +1286,141 @@ input:focus-visible {
 }
 
 /* ============================================
+   PROCESS STEPS (service detail pages)
+   ============================================ */
+.process-steps {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+    background-color: var(--line);
+    border: 1px solid var(--line);
+}
+
+.process-step {
+    background-color: var(--bg-raised);
+    padding: 20px 22px;
+    display: flex;
+    align-items: baseline;
+    gap: 18px;
+}
+
+.process-step-index {
+    font-family: var(--font-mono);
+    font-size: 12px;
+    font-weight: 600;
+    color: var(--brand);
+    flex-shrink: 0;
+    width: 26px;
+}
+
+.process-step-body h4 {
+    font-size: 16px;
+    margin-bottom: 4px;
+}
+
+.process-step-body p {
+    font-size: 14.5px;
+    margin-bottom: 0;
+}
+
+/* ============================================
+   ABOUT PAGE
+   ============================================ */
+.about-story {
+    padding: 70px 0 20px;
+}
+
+.about-story .section-lead {
+    max-width: 720px;
+}
+
+.about-values {
+    margin: 40px 0 10px;
+}
+
+/* ============================================
+   FAQ ACCORDION
+   ============================================ */
+.faq-list {
+    display: flex;
+    flex-direction: column;
+    gap: 1px;
+    background-color: var(--line);
+    border: 1px solid var(--line);
+    margin: 60px auto;
+    max-width: 840px;
+}
+
+.faq-item {
+    background-color: var(--bg-raised);
+}
+
+.faq-question {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    padding: 24px 28px;
+    background: none;
+    border: none;
+    text-align: left;
+    cursor: pointer;
+    font-family: var(--font-display);
+    font-size: 17px;
+    font-weight: 600;
+    color: var(--ink-strong);
+}
+
+.faq-question-icon {
+    flex-shrink: 0;
+    width: 20px;
+    height: 20px;
+    position: relative;
+}
+
+.faq-question-icon::before,
+.faq-question-icon::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    background-color: var(--ink);
+    transition: transform 0.2s ease;
+}
+
+.faq-question-icon::before {
+    width: 14px;
+    height: 2px;
+    transform: translate(-50%, -50%);
+}
+
+.faq-question-icon::after {
+    width: 2px;
+    height: 14px;
+    transform: translate(-50%, -50%);
+}
+
+.faq-item[data-open="true"] .faq-question-icon::after {
+    transform: translate(-50%, -50%) rotate(90deg);
+    opacity: 0;
+}
+
+.faq-answer {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease;
+}
+
+.faq-answer p {
+    padding: 0 28px 24px;
+    font-size: 15.5px;
+    line-height: 1.75;
+    max-width: 70ch;
+}
+
+/* ============================================
    AUTH (login — shares this stylesheet via layouts.main)
    ============================================ */
 .auth-wrapper {
@@ -1455,6 +1700,26 @@ input:focus-visible {
     .service-main,
     .service-sidebar {
         padding: 32px 26px;
+    }
+
+    .process-step {
+        padding: 16px 18px;
+        gap: 14px;
+    }
+
+    /* Portfolio */
+    .portfolio-body {
+        padding: 26px;
+    }
+
+    /* FAQ */
+    .faq-question {
+        padding: 20px 22px;
+        font-size: 16px;
+    }
+
+    .faq-answer p {
+        padding: 0 22px 20px;
     }
 }
 

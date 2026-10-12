@@ -28,6 +28,45 @@
                 <li>UI/UX Design for Web and Mobile Interfaces</li>
                 <li>Product Packaging and Labeling Design</li>
             </ul>
+
+            <h3>How We Work</h3>
+            <ol class="process-steps">
+                <li class="process-step">
+                    <span class="process-step-index">01</span>
+                    <div class="process-step-body">
+                        <h4>Brief</h4>
+                        <p>Understand your brand, audience, and what the materials need to communicate.</p>
+                    </div>
+                </li>
+                <li class="process-step">
+                    <span class="process-step-index">02</span>
+                    <div class="process-step-body">
+                        <h4>Concept</h4>
+                        <p>Initial design directions and drafts for your feedback.</p>
+                    </div>
+                </li>
+                <li class="process-step">
+                    <span class="process-step-index">03</span>
+                    <div class="process-step-body">
+                        <h4>Refine</h4>
+                        <p>Revise based on your input until the direction is right.</p>
+                    </div>
+                </li>
+                <li class="process-step">
+                    <span class="process-step-index">04</span>
+                    <div class="process-step-body">
+                        <h4>Finalize</h4>
+                        <p>Deliver production-ready files in the formats you need.</p>
+                    </div>
+                </li>
+                <li class="process-step">
+                    <span class="process-step-index">05</span>
+                    <div class="process-step-body">
+                        <h4>Support</h4>
+                        <p>Available for future materials as your brand evolves.</p>
+                    </div>
+                </li>
+            </ol>
         </div>
 
         <x-service-sidebar

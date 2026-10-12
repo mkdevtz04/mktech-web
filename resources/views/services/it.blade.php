@@ -28,6 +28,45 @@
                 <li>24/7 dedicated Helpdesk support for your staff</li>
                 <li>Routine data backup and disaster recovery solutions</li>
             </ul>
+
+            <h3>How We Work</h3>
+            <ol class="process-steps">
+                <li class="process-step">
+                    <span class="process-step-index">01</span>
+                    <div class="process-step-body">
+                        <h4>Assess</h4>
+                        <p>Audit your current network, hardware, and infrastructure to find gaps and risks.</p>
+                    </div>
+                </li>
+                <li class="process-step">
+                    <span class="process-step-index">02</span>
+                    <div class="process-step-body">
+                        <h4>Plan</h4>
+                        <p>Propose a setup or upgrade path scoped to your budget and business needs.</p>
+                    </div>
+                </li>
+                <li class="process-step">
+                    <span class="process-step-index">03</span>
+                    <div class="process-step-body">
+                        <h4>Deploy</h4>
+                        <p>Install, configure, and migrate systems with minimal disruption to daily operations.</p>
+                    </div>
+                </li>
+                <li class="process-step">
+                    <span class="process-step-index">04</span>
+                    <div class="process-step-body">
+                        <h4>Test</h4>
+                        <p>Verify performance, security, and backups before handing over.</p>
+                    </div>
+                </li>
+                <li class="process-step">
+                    <span class="process-step-index">05</span>
+                    <div class="process-step-body">
+                        <h4>Support</h4>
+                        <p>Ongoing helpdesk support and maintenance to keep things running.</p>
+                    </div>
+                </li>
+            </ol>
         </div>
 
         <x-service-sidebar

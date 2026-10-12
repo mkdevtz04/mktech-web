@@ -44,7 +44,8 @@
             </button>
             <ul class="nav-links" id="navLinks">
                 <li><a href="{{ url('/#services') }}">Services</a></li>
-                <!-- <li><a href="{{ url('/#about') }}">About</a></li> -->
+                <li><a href="{{ route('portfolio') }}">Portfolio</a></li>
+                <li><a href="{{ route('about') }}">About</a></li>
                 @if (Route::has('login'))
                     @auth
                         <li><a href="{{ url('/dashboard') }}">Dashboard</a></li>
@@ -104,7 +105,9 @@
                 <h4>Quick Links</h4>
                 <ul>
                     <li><a href="{{ url('/') }}">Home</a></li>
-                    <li><a href="{{ url('/#about') }}">About Us</a></li>
+                    <li><a href="{{ route('about') }}">About Us</a></li>
+                    <li><a href="{{ route('portfolio') }}">Portfolio</a></li>
+                    <li><a href="{{ route('faq') }}">FAQ</a></li>
                     <li><a href="{{ url('/#contact') }}">Get a Quote</a></li>
                     <li><a href="#">Privacy Policy</a></li>
                     <li><a href="#">Terms of Service</a></li>
@@ -173,6 +176,24 @@
                 navLinks.classList.remove('open');
                 navToggle.classList.remove('open');
                 navToggle.setAttribute('aria-expanded', 'false');
+            });
+        });
+
+        // FAQ accordion
+        document.querySelectorAll('.faq-question').forEach(function (button) {
+            button.addEventListener('click', function () {
+                const item = button.closest('.faq-item');
+                const answer = item.querySelector('.faq-answer');
+                const isOpen = item.getAttribute('data-open') === 'true';
+                if (isOpen) {
+                    item.setAttribute('data-open', 'false');
+                    button.setAttribute('aria-expanded', 'false');
+                    answer.style.maxHeight = null;
+                } else {
+                    item.setAttribute('data-open', 'true');
+                    button.setAttribute('aria-expanded', 'true');
+                    answer.style.maxHeight = answer.scrollHeight + 'px';
+                }
             });
         });
     </script>
